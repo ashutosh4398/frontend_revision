@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Contact page!</h1>
+    <h3>You can reach us using this form</h3>
+    <h3><a href="../old_style_blog.html">Click herer</a></h3>
+
+    <div id="contact-form">
+        <form action="#" method="GET">
+            <div class="">
+                <label for="fullName">Name</label>
+                <input 
+                    type="text" name="fullName" id="fullName"
+                    placeholder="Please Enter Your Name"
+                >
+            </div>
+            <div class="">
+                <label for="email">Email</label>
+                <input 
+                    type="email" name="email" id="email"
+                    placeholder="Email@fullname.com"
+                    required
+                >
+            </div>
+            <div class="">
+                <textarea name="remarks" id="remarks" cols="30" rows="10" placeholder="Your Remarks matters to us"></textarea>
+            </div>
+            <div class="">
+                <label for="category">Category</label>
+                <select name="category" id="category" multiple>
+                    <option value="Hire">Hire</option>
+                    <option value="Contact">Contact</option>
+                    <option value="Consult">Consult</option>
+                </select>
+            </div>
+            <div class="">
+                <button type="submit">Sumbit data</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
