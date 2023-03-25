@@ -1,0 +1,22 @@
+@media screen and (max-width: 1200px) {
+    .form-section {
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .mobile-image {
+        display: none;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section {
+        margin: auto;
+        justify-content: center;
+    }
+}

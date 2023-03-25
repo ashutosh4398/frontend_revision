@@ -1,0 +1,16 @@
+:root {
+    --primary-bg: #d5d5d5;
+
+
+    /* form colors */
+    --header-primary: #343333;
+    --input-border-primary: #a7a7a7;
+
+    /* buttons */
+    --btn-bg-default: #f59e2e;
+    --btn-bg-fb: #3471eb;
+    --btn-bg-google: #eb34e8;
+
+    --btn-text-primary: #ffffff;
+
+}

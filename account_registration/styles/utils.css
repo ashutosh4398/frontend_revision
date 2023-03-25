@@ -1,0 +1,46 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--input-border-primary);
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 20px;
+    color: var(--btn-text-primary);
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: var(--btn-bg-default);
+}
+
+.btn-google {
+    background-color: var(--btn-bg-google);
+}
+
+.btn-facebook {
+    background-color: var(--btn-bg-fb);
+}
+
+.btn:hover {
+    filter: brightness(90%);
+}
