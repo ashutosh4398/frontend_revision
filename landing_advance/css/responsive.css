@@ -1,0 +1,40 @@
+/* media querues */
+
+@media screen and (max-width: 1230px) {
+    .phone-holder {
+        height: 60%;
+    }
+
+    nav .nav-items {
+        display: none;
+    }
+
+    nav .nav-menu-icon {
+        display: block;
+        margin: auto;
+    }
+
+    .col-left {
+        text-align: center;
+        align-items: center;
+    }
+
+    .col-left h1 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .phone-holder {
+        display: none;
+    }
+
+    .google-play-img {
+        height: 50px;
+    }
+
+    .col-right {
+        flex: 0;
+    }
+}

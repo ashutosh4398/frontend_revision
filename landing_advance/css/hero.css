@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    flex: 0.5;
+    min-height: 100%;
+}
+
+.col-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--basic-color);
+}
+
+.col-left p {
+    font-size: 25px;
+}
+
+.col-left h1 {
+    font-size: 75px;
+    margin: 20px 0;
+}
+
+.col-left .google-play-img {
+    height: 90px;
+}
+
+.col-right {
+    overflow: hidden;
+    position: relative;
+    /* position: abso; */
+}
+
+.phone-holder {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}

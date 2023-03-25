@@ -7,7 +7,9 @@
 
 /* hamburger */
 nav .nav-menu-icon {
+    font-size: 30px;
     display: none;
+    color: var(--basic-color);
 }
 
 
