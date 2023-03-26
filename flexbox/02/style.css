@@ -1,0 +1,34 @@
+.container div {
+    border: 1px solid crimson;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    /* justify content always works for main axis => depending upon flex direction which is set */
+    /* in case of browser, main axis by default is row */
+    justify-content: center;
+    /* flex-direction: row-reverse; */
+
+    /* align itmes works on other axis ie opposite of  */
+    /* works only when container height and width is defined/set */
+    align-items: baseline;
+}
+
+.container div {
+    flex-grow: 1;
+}
+
+/* custom ordering of flex items */
+/* by default flex items have order as 0 */
+.container div:nth-child(5) {
+    flex-grow: 2;
+    order: -3;
+}
