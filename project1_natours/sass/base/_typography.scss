@@ -1,0 +1,53 @@
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+    
+        animation-name: move-in-left;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    
+    
+        /* animation-delay: 3s; */
+        /* animation-iteration-count: 1; */
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.79rem;
+        /* animation-name: move-in-right;
+        animation-duration: 1s;
+        animation-timing-function: ease-out; */
+        animation: move-in-right 1s ease-out;
+    }
+    
+}
+
+
+/* inherited properties by child elements */
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 1.5rem;
+}
+
+
+html {
+    /* set root fontsize, so that we can use rem units */
+    /* font-size: 10px;  */
+    /* it's bad practice to have px, instead we use % so that user can zoomin-out as per convenience */
+    /* 10px is what we want and by default fontsize is 16px thus 10/16*100% */
+    // this defines what 1rem is, hence moved it to typography
+    font-size: 62.5%;
+}

@@ -1,0 +1,64 @@
+
+/* btn btn-white */
+/* pseudo class -> special state of a selector */
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    transition: all .2s;
+    border-radius: 10rem;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+
+
+.btn {
+    &--animated {
+        animation: move-in-bottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    
+    &:active {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            /* adding fading effect with transition */
+            opacity: 0;
+        }
+    }
+    
+    &--white {
+        background-color: $color-white;
+        color: $color-grey-dark;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            background-color: $color-white;
+        }
+    }
+}
